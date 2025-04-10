@@ -1436,6 +1436,33 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/pwr/PowerFeatureConfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/PowerFeatureConfig.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/pwr/StandbyFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/StandbyFeature.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/pwr/VideoPowerOptFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwr/VideoPowerOptFeature.xml \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/qcrilNr.db:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/qcrilNr.db \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0006.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0006.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0007.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0007.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0008.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0008.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0009.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0009.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0010.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0010.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0011.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0011.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0012.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0012.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0013.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0013.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0014.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0014.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/config/0015.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/0015.0_config.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0000_initial_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0001_version_intro_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0002_version_add_wps_config_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0003_version_update_wps_config_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0004_version_update_ecc_table_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0005_version_update_ecc_table_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0006_version_change_property_table_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0007_version_update_ecc_table_qcrilnr.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0008_version_update_ecc_table.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0009_version_update_ecc_table.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0010_version_update_ecc_table.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0011_version_update_ecc_table.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0012_version_update_ecc_table.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0013_version_update_ecc_table.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0014_version_update_modules.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0014_version_update_modules.sql \
+    vendor/oneplus/sm8650-common/proprietary/vendor/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0015_version_add_iccid_clir_pref_table.sql \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/qvr/cfg/557/0/65536/mtplanai.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/557/0/65536/mtplanai.txt \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/qvr/cfg/557/0/65536/mtplanai_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/557/0/65536/mtplanai_6dof_config.xml \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/qvr/cfg/557/0/65536/mtplanai_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/557/0/65536/mtplanai_qvr_3dof_tracker_config.txt \
@@ -2621,7 +2648,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom-V1-ndk \
     vendor.qti.hardware.qseecom@1.0 \
     vendor.qti.hardware.qteeconnector@1.0 \
-    vendor.qti.hardware.qxr-V1-ndk \
+    vendor.qti.hardware.qxr-V1-ndk_vendor \
     vendor.qti.hardware.radio.am-V1-ndk \
     vendor.qti.hardware.radio.am@1.0_vendor \
     vendor.qti.hardware.radio.atcmdfwd@1.0 \
@@ -3086,32 +3113,6 @@ PRODUCT_PACKAGES += \
     com.android.hotwordenrollment.common.util \
     vendor.oplus.hardware.charger-V1-java \
     vendor.oplus.hardware.charger-V6-java \
-    0006.0_config \
-    0007.0_config \
-    0008.0_config \
-    0009.0_config \
-    0010.0_config \
-    0011.0_config \
-    0012.0_config \
-    0013.0_config \
-    0014.0_config \
-    0015.0_config \
-    0000_initial_qcrilnr \
-    0001_version_intro_qcrilnr \
-    0002_version_add_wps_config_qcrilnr \
-    0003_version_update_wps_config_qcrilnr \
-    0004_version_update_ecc_table_qcrilnr \
-    0005_version_update_ecc_table_qcrilnr \
-    0006_version_change_property_table_qcrilnr \
-    0007_version_update_ecc_table_qcrilnr \
-    0008_version_update_ecc_table \
-    0009_version_update_ecc_table \
-    0010_version_update_ecc_table \
-    0011_version_update_ecc_table \
-    0012_version_update_ecc_table \
-    0013_version_update_ecc_table \
-    0014_version_update_modules \
-    0015_version_add_iccid_clir_pref_table \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
