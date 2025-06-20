@@ -3099,7 +3099,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "libsoc_helper", "libminksocket_vendor", "libPeripheralStateUtils", "libbinder_ndk", "vendor.oplus.hardware.stability.oplus_project-V1-ndk", "libqmiservices", "libchrome", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "libsoc_helper", "libminksocket_vendor", "libPeripheralStateUtils", "libbinder_ndk", "vendor.oplus.hardware.stability.oplus_project-V1-ndk", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -3117,7 +3117,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-qti.so"],
-			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "libsoc_helper", "libchrome", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libcutils", "libhidlbase", "liblog", "libutils", "libdiag", "libqmi_cci", "libbtnv", "android.hardware.bluetooth@1.0", "android.hardware.bluetooth@1.1", "android.hardware.bluetooth@1.0-impl-qti", "libsoc_helper", "libqmiservices", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -15822,142 +15822,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.common-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.common-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.common-helper",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.common-helper.so"],
-			shared_libs: ["liblog", "libutils", "vendor.qti.hardware.secureprocessor.common-V1-ndk", "vendor.qti.hardware.secureprocessor.config-V1-ndk", "vendor.qti.hardware.secureprocessor.device-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.common@1.0-helper",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0-helper.so"],
-			shared_libs: ["liblog", "libutils", "vendor.qti.hardware.secureprocessor.common@1.0", "vendor.qti.hardware.secureprocessor.config@1.0", "vendor.qti.hardware.secureprocessor.device@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.common@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.common@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.config-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.config-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.config@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.config@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.device-V1-ndk",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.device-V1-ndk.so"],
-			shared_libs: ["libbinder_ndk", "android.hardware.common-V2-ndk", "vendor.qti.hardware.secureprocessor.common-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.secureprocessor.device@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so"],
-			shared_libs: ["vendor.qti.hardware.secureprocessor.common@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.sensorscalibrate-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -22323,9 +22187,9 @@ dex_import {
 }
 
 dex_import {
-	name: "vendor.oplus.hardware.charger-V6-java",
+	name: "vendor.oplus.hardware.charger-V7-java",
 	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.charger-V6-java.jar"],
+	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.charger-V7-java.jar"],
 	system_ext_specific: true,
 }
 
@@ -22630,15 +22494,6 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.radio.qtiradioconfig.xml",
 	owner: "oneplus",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.qtiradioconfig.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.secureprocessor.xml",
-	owner: "oneplus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.secureprocessor.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -24399,42 +24254,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service"],
 			shared_libs: ["liblog", "libbase", "libutils", "libbinder_ndk", "libdmabufheap", "libQSEEComAPI", "vendor.qti.hardware.qseecom-V1-ndk", "vendor.qti.hardware.qseecom@1.0-impl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.qti.hardware.secureprocessor",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libbinder_ndk", "libhidlbase", "android.hardware.common-V2-ndk", "vendor.qti.hardware.secureprocessor.common-helper", "vendor.qti.hardware.secureprocessor.device-V1-ndk", "vendor.qti.hardware.secureprocessor.common-V1-ndk", "vendor.qti.hardware.secureprocessor.config-V1-ndk", "libgralloc.qti", "libgralloctypes", "libdmabufheap", "libminksocket_vendor", "libminkdescriptor", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "vendor.qti.hardware.secureprocessor@1.0",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libhidlbase", "libbinder", "vendor.qti.hardware.secureprocessor.common@1.0", "vendor.qti.hardware.secureprocessor.config@1.0", "vendor.qti.hardware.secureprocessor.device@1.0", "vendor.qti.hardware.secureprocessor.common@1.0-helper", "libgralloc.qti", "libgralloctypes", "libdmabufheap", "libminksocket_vendor", "libminkdescriptor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",

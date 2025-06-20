@@ -1347,8 +1347,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.limits-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.limits-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.perf2-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf2-hal-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor.rc \
-    vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.secureprocessor@1.0.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetrackeraidl-service.rc \
     vendor/oneplus/sm8650-common/proprietary/vendor/etc/init/vendor.qti.hardware.soter-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter-service.rc \
@@ -2681,14 +2679,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.2_vendor \
     vendor.qti.hardware.radio.uim_remote_server-V1-ndk \
     vendor.qti.hardware.radio.uim_remote_server@1.0_vendor \
-    vendor.qti.hardware.secureprocessor.common-V1-ndk \
-    vendor.qti.hardware.secureprocessor.common-helper \
-    vendor.qti.hardware.secureprocessor.common@1.0-helper \
-    vendor.qti.hardware.secureprocessor.common@1.0 \
-    vendor.qti.hardware.secureprocessor.config-V1-ndk \
-    vendor.qti.hardware.secureprocessor.config@1.0 \
-    vendor.qti.hardware.secureprocessor.device-V1-ndk \
-    vendor.qti.hardware.secureprocessor.device@1.0 \
     vendor.qti.hardware.sensorscalibrate-V1-ndk \
     vendor.qti.hardware.servicetrackeraidl-V1-ndk_vendor \
     vendor.qti.hardware.slmadapter@1.0_vendor \
@@ -3093,7 +3083,7 @@ PRODUCT_PACKAGES += \
     HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
     com.android.hotwordenrollment.common.util \
     vendor.oplus.hardware.charger-V1-java \
-    vendor.oplus.hardware.charger-V6-java \
+    vendor.oplus.hardware.charger-V7-java \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.gnss-aidl-service-qti.xml \
@@ -3128,7 +3118,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qseecom@1.0-service.xml \
     vendor.qti.hardware.qxr-service.xml \
     vendor.qti.hardware.radio.qtiradioconfig.xml \
-    vendor.qti.hardware.secureprocessor.xml \
     vendor.qti.hardware.sensorscalibrate.xml \
     vendor.qti.hardware.servicetrackeraidl-service.xml \
     vendor.qti.hardware.soter-service.xml \
@@ -3290,8 +3279,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.2-service \
     vendor.qti.hardware.perf2-hal-service \
     vendor.qti.hardware.qseecom@1.0-service \
-    vendor.qti.hardware.secureprocessor \
-    vendor.qti.hardware.secureprocessor@1.0 \
     vendor.qti.hardware.sensorscalibrate-service \
     vendor.qti.hardware.servicetrackeraidl-service \
     vendor.qti.hardware.soter-service \
