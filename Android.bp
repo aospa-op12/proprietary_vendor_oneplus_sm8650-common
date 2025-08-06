@@ -17143,40 +17143,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "camera.device@3.2-impl_odm",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/camera.device@3.2-impl_odm.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "android.hardware.camera.device@3.2", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "camera.device@3.3-impl_odm",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/camera.device@3.3-impl_odm.so"],
-			shared_libs: ["libhidlbase", "libutils", "libcutils", "camera.device@3.2-impl_odm", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.provider@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "liblog", "libgralloctypes", "libhardware", "libcamera_metadata", "libfmq", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "com.qti.sensor.imx581",
 	owner: "oneplus",
 	strip: {
@@ -17725,6 +17691,24 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libEIS.so"],
 			shared_libs: ["liblog", "libui", "libutils", "libGLESv3", "libEGL", "libnativewindow", "libm", "libdl", "libc", ],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libEISLive",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libEISLive.so"],
+			shared_libs: ["liblog", "libsharebuffer", "libui", "libutils", "libnativewindow", "libc++_shared", "libGLESv3", "libEGL", "libm", "libdl", "libc", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21376,23 +21360,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.charger@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.charger@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.oplus.hardware.displaycolorfeature-V1-ndk",
 	owner: "oneplus",
 	strip: {
@@ -21572,125 +21539,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.urcc-V1-ndk.so"],
 			shared_libs: ["libbinder_ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.hal@3.3",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.hal@3.3.so"],
-			shared_libs: ["libcamera_metadata", "libutils", "libcutils", "liblog", "libsync", "libhidlbase", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl.so"],
-			shared_libs: ["libui_shim", "liblog", "libutils", "libcutils", "libcamera_metadata", "libui", "libhidlbase", "libjsoncpp", "libjpeg", "libhardware", "libEGL", "libGLESv2", "libGLESv3", "libgralloctypes", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hardware.camera.provider@2.4", "android.hardware.camera.metadata@3.2", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.manager@1.0",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.manager@1.0.so"],
-			shared_libs: ["android.hardware.graphics.common@1.0", "android.hardware.camera.common@1.0", "android.hardware.camera.metadata@3.2", "android.hardware.camera.device@3.3", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl.so"],
-			shared_libs: ["libcamera_metadata", "libcutils", "libhidlbase", "liblog", "libutils", "libhardware", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hardware.camera.common@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.provider@2.4", "camera.device@3.2-impl_odm", "camera.device@3.3-impl_odm", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "vendor.oplus.hardware.virtual_device.camera.hal@3.3", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.5-impl.so"],
-			shared_libs: ["libcamera_metadata", "libcutils", "libhidlbase", "liblog", "libutils", "libhardware", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hardware.camera.common@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.provider@2.4", "android.hardware.camera.provider@2.5", "camera.device@3.2-impl_odm", "camera.device@3.3-impl_odm", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "vendor.oplus.hardware.virtual_device.camera.hal@3.3", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.6-impl.so"],
-			shared_libs: ["libcamera_metadata", "libcutils", "libhidlbase", "liblog", "libutils", "libhardware", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hardware.camera.common@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.provider@2.4", "android.hardware.camera.provider@2.5", "android.hardware.camera.provider@2.6", "camera.device@3.2-impl_odm", "camera.device@3.3-impl_odm", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "vendor.oplus.hardware.virtual_device.camera.hal@3.3", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/lib64/vendor.oplus.hardware.virtual_device.camera.provider@2.7-impl.so"],
-			shared_libs: ["libcamera_metadata", "libcutils", "libhidlbase", "liblog", "libutils", "libhardware", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.mapper@4.0", "android.hardware.camera.common@1.0", "android.hardware.camera.device@3.2", "android.hardware.camera.device@3.3", "android.hardware.camera.provider@2.4", "android.hardware.camera.provider@2.5", "android.hardware.camera.provider@2.6", "android.hardware.camera.provider@2.7", "camera.device@3.2-impl_odm", "camera.device@3.3-impl_odm", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "vendor.oplus.hardware.virtual_device.camera.hal@3.3", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -22177,20 +22025,6 @@ dex_import {
 	owner: "oneplus",
 	jars: ["proprietary/product/framework/com.android.hotwordenrollment.common.util.jar"],
 	product_specific: true,
-}
-
-dex_import {
-	name: "vendor.oplus.hardware.charger-V1-java",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.charger-V1-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.oplus.hardware.charger-V7-java",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/vendor.oplus.hardware.charger-V7-java.jar"],
-	system_ext_specific: true,
 }
 
 prebuilt_etc_xml {
@@ -25528,7 +25362,7 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff"],
-			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "liboplus-uah-client", "libosensenativeproxy_client", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -25619,24 +25453,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature-service"],
 			shared_libs: ["libbase", "libbinder_ndk", "libutils", "libpwirisfeature", "vendor.pixelworks.hardware.feature-V1-ndk", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	device_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "virtualcameraprovider",
-	owner: "oneplus",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/odm/bin/hw/virtualcameraprovider"],
-			shared_libs: ["android.hardware.camera.provider@2.4", "vendor.oplus.hardware.virtual_device.camera.provider@2.4-impl", "liblog", "libutils", "libhidlbase", "vendor.oplus.hardware.virtual_device.camera.manager@1.0", "vendor.oplus.hardware.virtual_device.camera.manager@1.0-impl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
