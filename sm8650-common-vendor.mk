@@ -2752,7 +2752,6 @@ PRODUCT_PACKAGES += \
     nearby.napp_header \
     nearby \
     libostatslog \
-    vendor.oplus.hardware.charger-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature@1.0 \
     libQnnHtp.aiboost \
@@ -3028,7 +3027,6 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.camera_rfi-V1-ndk \
     vendor.oplus.hardware.camera_rfi-V1-service-impl \
     vendor.oplus.hardware.cammidasservice-V1-ndk \
-    vendor.oplus.hardware.charger-V6-ndk \
     vendor.oplus.hardware.displaycolorfeature-V1-ndk \
     vendor.oplus.hardware.displaypanelfeature-V1-ndk_odm \
     vendor.oplus.hardware.olc2-V1-ndk \
