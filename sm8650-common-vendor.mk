@@ -2241,8 +2241,7 @@ PRODUCT_PACKAGES += \
     libnspdiag \
     libnspextensionloader \
     libnspframework \
-    libnspframeworkcore \
-    libnspframeworkcoreutility \
+    libnspframeworkutility \
     libnspgraphing \
     libnspipc \
     libnsposal \

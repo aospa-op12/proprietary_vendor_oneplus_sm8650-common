@@ -8142,7 +8142,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnspdependency.so"],
-			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspframeworkcoreutility", "libnsposal", "libnsptransaction", "libsynx", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspframeworkutility", "libnsposal", "libnsptransaction", "libsynx", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8193,7 +8193,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnspextensionloader.so"],
-			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspframeworkcoreutility", "libnspipc", "libnsposal", "libnsptransaction", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspframeworkutility", "libnspipc", "libnsposal", "libnsptransaction", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8210,7 +8210,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnspframework.so"],
-			shared_libs: ["liblog", "libcdsprpc", "libdmabufheap", "libsynx", "libvmmem", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspextensionloader", "libnspframeworkutility", "libnspipc", "libnsposal", "libnspsession", "libnsptransaction", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -8219,31 +8219,14 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libnspframeworkcore",
+	name: "libnspframeworkutility",
 	owner: "oneplus",
 	strip: {
 		none: true,
 	},
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libnspframeworkcore.so"],
-			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspextensionloader", "libnspframeworkcoreutility", "libnspipc", "libnsposal", "libnspsession", "libnsptransaction", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libnspframeworkcoreutility",
-	owner: "oneplus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libnspframeworkcoreutility.so"],
+			srcs: ["proprietary/vendor/lib64/libnspframeworkutility.so"],
 			shared_libs: ["liblog", "libnspdescriptorhandler", "libnspdiag", "libnspipc", "libnsposal", "libnsptransaction", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
@@ -8346,7 +8329,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libnspsession.so"],
-			shared_libs: ["liblog", "libnspdependency", "libnspdescriptorhandler", "libnspdiag", "libnspextensionloader", "libnspframeworkcoreutility", "libnspgraphing", "libnsposal", "libnspresource", "libnspscheduler", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["liblog", "libnspdependency", "libnspdescriptorhandler", "libnspdiag", "libnspextensionloader", "libnspframeworkutility", "libnspgraphing", "libnsposal", "libnspresource", "libnspscheduler", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9318,7 +9301,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilDataModule.so"],
-			shared_libs: ["vendor.qti.hardware.data.iwlandata-V1-ndk_vendor", "android.hardware.radio@1.6", "vendor.qti.hardware.data.connectionaidl-V1-ndk", "libqdpr", "libdsi_netctrl", "liblog", "libcutils", "libbase", "libutils", "libbinder_ndk", "libqcrilNrFramework", "libqcrilNrLogger", "libril-db", "libqcrilNrQtiBus", "libqcrilNrQtiMutex", "qcrilNrQmiModule", "qtiril-utils", "libqmi_cci", "libqmi_client_qmux", "libqmi_client_helper", "libqmiservices", "libdsutils", "libhidlbase", "libhardware_legacy", "qtiwakelock", "android.hardware.radio-V2-ndk", "android.hardware.radio.data-V2-ndk", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["android.hardware.radio@1.6", "vendor.qti.hardware.data.iwlandata-V1-ndk_vendor", "vendor.qti.hardware.data.connectionaidl-V1-ndk", "libqdpr", "libdsi_netctrl", "liblog", "libcutils", "libbase", "libutils", "libbinder_ndk", "libqcrilNrFramework", "libqcrilNrLogger", "libril-db", "libqcrilNrQtiBus", "libqcrilNrQtiMutex", "qcrilNrQmiModule", "qtiril-utils", "libqmi_cci", "libqmi_client_qmux", "libqmi_client_helper", "libqmiservices", "libdsutils", "libhidlbase", "libhardware_legacy", "qtiwakelock", "android.hardware.radio-V2-ndk", "android.hardware.radio.data-V2-ndk", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -9369,7 +9352,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcrilNrFramework.so"],
-			shared_libs: ["libqcrilNrLogger", "libqcrilNrQtiMutex", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libchrome", "libcutils", "libcrypto", "libqcrilNrLogger", "libqcrilNrQtiMutex", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
