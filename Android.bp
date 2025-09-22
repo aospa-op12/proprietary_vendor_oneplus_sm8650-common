@@ -19945,6 +19945,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "libifaa_factory",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libifaa_factory.so"],
+			shared_libs: ["libc", "libcutils", "libutils", "libQSEEComAPI", "libhardware", "liblog", "libc++", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libimgClarityEvaluate",
 	owner: "oneplus",
 	strip: {
@@ -20523,6 +20540,23 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+	name: "librpmbengclient",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/librpmbengclient.so"],
+			shared_libs: ["libc", "libcutils", "libutils", "libQSEEComAPI", "liblog", "libdmabufheap", "libminkdescriptor", "libc++", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
 	name: "libsat",
 	owner: "oneplus",
 	strip: {
@@ -20549,6 +20583,23 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/odm/lib64/libsaveshaderbin.so"],
 			shared_libs: ["libcreatebin", "libGLESv3", "libEGL", "libdl", "liblog", "libc", "libm", ],
+		},
+	},
+	compile_multilib: "64",
+	prefer: true,
+	device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsecurity_event_dcs_vnd",
+	owner: "oneplus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/lib64/libsecurity_event_dcs_vnd.so"],
+			shared_libs: ["vendor.oplus.hardware.commondcs-V1-ndk", "libbinder", "liblog", "libbase", "libutils", "libcrypto", "libhardware", "libhidlbase", "libbinder_ndk", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -21674,6 +21725,17 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+android_app_import {
+	name: "SoterService",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -23046,6 +23108,15 @@ prebuilt_etc_xml {
 	name: "manifest_oplus_fingerprint_aidl_v3.xml",
 	owner: "oneplus",
 	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_fingerprint_aidl_v3.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_oplus_ifaa.xml",
+	owner: "oneplus",
+	src: "proprietary/odm/etc/vintf/manifest/manifest_oplus_ifaa.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	device_specific: true,
@@ -24506,11 +24577,11 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "ssgqmigd64",
+	name: "ssgqmigd",
 	owner: "oneplus",
 	target: {
 		android_arm64: {
-			srcs: ["proprietary/vendor/bin/ssgqmigd64"],
+			srcs: ["proprietary/vendor/bin/ssgqmigd"],
 			shared_libs: ["liblog", "libm", "libdl", "libc", ],
 		},
 	},
@@ -24923,6 +24994,24 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff"],
 			shared_libs: ["libshims_aidl_fingerprint_v3.oplus", "libdmabufheap", "vendor.oplus.hardware.performance-V1-ndk", "vendor.oplus.hardware.osense.client-V1-ndk", "libosenseaidlhalclient", "liboplus-uah-client", "libosensenativeproxy_client", "libolc_vnd", "vendor.oplus.hardware.commondcs-V1-ndk", "vendor.oplus.hardware.touch-V1-ndk", "android.hardware.biometrics.fingerprint-V3-ndk", "android.hardware.biometrics.common-V3-ndk", "libbinder", "liblog", "libhidlbase", "libhidltransport", "libcutils", "libbinder_ndk", "libQSEEComAPI", "libion", "libbase", "libsensorndkbridge", "libhardware", "libutils", "libtinyxml2", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "64",
+	strip: {
+		none: true,
+	},
+	prefer: true,
+	relative_install_path: "hw",
+	device_specific: true,
+}
+
+cc_prebuilt_binary {
+	name: "vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service",
+	owner: "oneplus",
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprintpay@1.0-service"],
+			shared_libs: ["libbinder", "liblog", "libbase", "libhidlbase", "libhidltransport", "libhardware", "libcutils", "libutils", "librpmbengclient", "libifaa_factory", "libbinder_ndk", "libQSEEComAPI", "vendor.oplus.hardware.biometrics.fingerprintpay-V1-ndk", "libsecurity_event_dcs_vnd", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
